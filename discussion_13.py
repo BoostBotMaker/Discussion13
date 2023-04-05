@@ -93,7 +93,6 @@ def visualization_salary_data(cur, conn):
 
     cur.execute(""" SELECT Jobs.job_title, Jobs.min_salary, Jobs.max_salary FROM Jobs""")
     results = cur.fetchall()
-    print(results)
     x = []
     y = []
     for result in results:
